@@ -91,3 +91,4 @@ fendo181/ubuntu       0.1                 6a7ed7b5c47d        25 seconds ago    
 - [Dockerfile リファレンス](http://docs.docker.jp/engine/reference/builder.html)
 - [docker コマンド チートシート](https://qiita.com/voluntas/items/68c1fd04dd3d507d4083)
 - [Dockerfile のベストプラクティス](http://docs.docker.jp/engine/articles/dockerfile_best-practice.html)
+- [Dockerで複数バージョンのrubyがインストールされたイメージを作る](https://deeeet.com/writing/2013/12/12/docker-rbenv/)
