@@ -1,6 +1,4 @@
 FROM ubuntu:16.04
-MAINTAINER fendo181 fedno181git@gmail.com
-
 # あくまで落としてくるだけ
 RUN echo 'Ubuntuのイメージを落としてきます。'
 
