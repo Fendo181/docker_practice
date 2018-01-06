@@ -31,8 +31,3 @@ docker run --rm --name alpine -it fendo181/alpine:0.1
 ```
 docker exec -it container_name(alpine) /bin/sh
 ```
-
-
-## Reference
-
-- [drecom/docker-ubuntu-ruby](https://github.com/drecom/docker-ubuntu-ruby)
