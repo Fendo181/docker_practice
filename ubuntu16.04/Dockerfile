@@ -10,7 +10,7 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get install git -qq
 RUN apt-get install vim -qq
 
-### Ruby ###
+### Ruby
 
 # rbenv ruby-build rbenv-gemset install
 RUN git clone git://github.com/rbenv/rbenv.git /usr/local/rbenv \
@@ -30,5 +30,5 @@ RUN echo 'export RBENV_ROOT=/usr/local/rbenv' >> /root/.bashrc \
 ENV CONFIGURE_OPTS --disable-install-doc
 ENV PATH /usr/local/rbenv/bin:/usr/local/rbenv/shims:$PATH
 
-WORKDIR ~/root/src
 RUN apt-get autoclean
+WORKDIR ~/root/src
