@@ -1,1 +1,8 @@
-FROM alpine:3.7
+FROM alpine:latest
+
+# setup
+RUN apk update
+RUN apk add vim
+RUN apk add vim
+
+

@@ -1,13 +1,38 @@
-## Build Command
+## Docker-alpine:latest
 
-```ruby
-# イメージからコンテナを起動する
-docker run -itd {docker_id}
+alpineは最小のlinuxなので遊ぶにはもってこい。
+が`apk`コマンドが慣れない
 
-#コンテナの中に入る。
-docker exec -it container_id /bin/sh 
+- [Dockerやる前のAlpine Linux](https://yoshinorin.net/2016/10/01/alpine-linux/)
+
+### packeage
+
+
+### Usage
+
+`build`
+
+```
+docker build -t fendo181/alpine:0.1 .
+
+# ReBuild
+docker build  -t fendo181/alpine:0.1 --no-cache .
 ```
 
-## OS
+`run`
 
-- alpine:3.7d im
+```
+docker run --rm --name alpine -it fendo181/alpine:0.1
+
+```
+
+`exec`
+
+```
+docker exec -it container_name(alpine) /bin/sh
+```
+
+
+## Reference
+
+- [drecom/docker-ubuntu-ruby](https://github.com/drecom/docker-ubuntu-ruby)
