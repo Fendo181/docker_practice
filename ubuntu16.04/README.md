@@ -29,6 +29,3 @@ docker run --rm --name  ubuntu -it fendo181/ubuntu:0.1
 docker exec -i -t ubuntu bash
 ```
 
-## Reference
-
-- [drecom/docker-ubuntu-ruby](https://github.com/drecom/docker-ubuntu-ruby)

@@ -92,3 +92,4 @@ docker exec -i -t ubuntu16.04 bash
 - [Dockerコマンドメモ](https://qiita.com/curseoff/items/a9e64ad01d673abb6866)
 - [Dockerfile のベストプラクティス](http://docs.docker.jp/engine/articles/dockerfile_best-practice.html)
 - [Dockerで複数バージョンのrubyがインストールされたイメージを作る](https://deeeet.com/writing/2013/12/12/docker-rbenv/)
+- [drecom/docker-ubuntu-ruby](https://github.com/drecom/docker-ubuntu-ruby)
