@@ -20,7 +20,7 @@ docker build  -t fendo181/ubuntu:0.1 --no-cache .
 `run`
 
 ```
-docker run --name  ubuntu -it fendo181/ubuntu:0.1
+docker run --rm --name  ubuntu -it fendo181/ubuntu:0.1
 ```
 
 `exec`
