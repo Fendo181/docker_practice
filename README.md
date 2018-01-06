@@ -35,23 +35,6 @@ nameも指定する。
 docker run --name ubuntu16.04 -d -i -t fendo181/ubuntu:0.1 /bin/bash
 ```
 
-
-### コンテナの中に入る。
-
-`CONTAINER ID`を指定する場合
-
-```sh
-docker exec -i -t (docker-id)  bash
-```
-
-
-`NAMES`を指定する場合
-
-```sh
-docker exec -i -t ubuntu16.04 bash
-```
-
-
 ## Dockerfile
 
 上の方法だとただ、ubuntuのimageをインストールするだけなので、とくに何もソフトウェアを入れてない状態。したがってほぼプレーンである。
@@ -84,11 +67,28 @@ docker build -t fendo181/ubuntu16.04:0.1 .
 fendo181/ubuntu       0.1                 6a7ed7b5c47d        25 seconds ago      151MB
 ```
 
+### コンテナの中に入る。
+
+`CONTAINER ID`を指定する場合
+
+```sh
+docker exec -i -t (docker-id)  bash
+```
+
+
+`NAMES`を指定する場合
+
+```sh
+docker exec -i -t ubuntu16.04 bash
+```
+
+
 
 
 
 ### 資料
 - [Dockerfile リファレンス](http://docs.docker.jp/engine/reference/builder.html)
 - [docker コマンド チートシート](https://qiita.com/voluntas/items/68c1fd04dd3d507d4083)
+- [Dockerコマンドメモ](https://qiita.com/curseoff/items/a9e64ad01d673abb6866)
 - [Dockerfile のベストプラクティス](http://docs.docker.jp/engine/articles/dockerfile_best-practice.html)
 - [Dockerで複数バージョンのrubyがインストールされたイメージを作る](https://deeeet.com/writing/2013/12/12/docker-rbenv/)
